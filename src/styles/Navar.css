@@ -1,0 +1,101 @@
+/* Navbar */
+#desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align logo and nav items properly */
+    padding: 1rem 5rem;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Box shadow for the navbar */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  /* Logo styling */
+  #desktop-nav .logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Dome', sans-serif;  /* Custom font family */
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 2px;
+  }
+  
+  #desktop-nav .logo img {
+    height: 40px;  /* Set a fixed height for the logo */
+    margin-right: 10px;  /* Space between logo image and text */
+  }
+  
+  /* Navbar links styling */
+  #desktop-nav .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  #desktop-nav .nav-links li {
+    font-size: 1.1rem;
+  }
+  
+  #desktop-nav .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  #desktop-nav .nav-links a:hover {
+    color: #007BFF;  /* Hover effect on links */
+  }
+  
+  /* Mobile Navbar Styling */
+  #hamburger-nav {
+    display: none;
+  }
+  
+  /* Add responsiveness to the navbar */
+  @media (max-width: 768px) {
+    /* Hide desktop navbar on small screens */
+    #desktop-nav {
+      display: none;
+    }
+  
+    /* Display hamburger menu on small screens */
+    #hamburger-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #fff;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    }
+  
+    #hamburger-nav .logo {
+      font-size: 1.5rem; /* Adjust logo size for mobile */
+    }
+  
+    #hamburger-nav .menu-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    #hamburger-nav .menu-links li {
+      font-size: 1.2rem;
+    }
+  
+    #hamburger-nav .menu-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      padding: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+  
+    #hamburger-nav .menu-links a:hover {
+      background-color: #007BFF;  /* Hover effect for mobile links */
+      color: #fff;
+    }
+  }
+  

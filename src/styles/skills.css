@@ -1,0 +1,68 @@
+/* EXPERIENCE SECTION */
+
+#experience {
+    position: relative;
+    padding: 2rem;
+  }
+  
+  .experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .experience-details-container {
+    display: flex;
+    justify-content: center; /* Centers the boxes horizontally */
+    align-items: center; /* Centers the boxes vertically */
+    gap: 4rem; /* Adds spacing between the two boxes */
+  }
+  
+  .details-container {
+    flex: 1; /* Allows the boxes to take equal width if space permits */
+    max-width: 45%; /* Prevents the boxes from becoming too wide */
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    border: rgb(163, 163, 163) 0.1rem solid;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    text-align: center;
+  }
+  
+  .article-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    gap: 2.5rem; /* Space between items */
+    justify-items: center; /* Center items within their grid cells */
+  }
+  
+  article {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  article .icon {
+    cursor: default;
+    width: 20px; /* Ensures consistent icon size */
+    height: 20px;
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 768px) {
+    .experience-details-container {
+      flex-direction: column; /* Stack the boxes vertically on smaller screens */
+      gap: 2rem;
+    }
+  
+    .details-container {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .article-container {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+      gap: 1rem; /* Adjust spacing for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,86 @@
+/* PROJECTS SECTION */
+
+#projects {
+    position: relative;
+    padding: 2rem;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: center; /* Center the projects */
+    gap: 2rem;
+  }
+  
+  .project {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px; /* Set a fixed width for each project card */
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 0.5px dashed black;
+  }
+  
+  .project-img {
+    width: 80%; /* Reduce image size */
+    height: 60%;
+    border-radius: 1rem;
+    margin-bottom: 1rem; /* Add spacing between image and title */
+  }
+  
+  .project-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: rgb(85, 85, 85);
+  }
+  
+  .project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .project-buttons .btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(163, 163, 163);
+    background: transparent;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .project-buttons .btn:hover {
+    background: rgb(163, 163, 163);
+    color: white;
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 768px) {
+    .project-container {
+      flex-direction: column; /* Stack projects vertically on smaller screens */
+    }
+  
+    .project {
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    .project-buttons {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 0.5rem;
+    }
+  }
+  

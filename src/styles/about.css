@@ -1,0 +1,87 @@
+#about {
+    position: relative;
+    padding: 2rem;
+    margin-top: -3rem; /* Reduce space between Home and About */
+  }
+  
+  .section-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: flex-start; /* Align items to the top */
+    gap: 4rem;
+    margin-left: 5rem; /* Move the entire section further to the right */
+  }
+  
+  .about-pic {
+    width: 400px; /* Increase the image width */
+    height: auto;
+    border-radius: 1rem;
+    margin-left: 3rem; /* Add a margin to move the image slightly to the right */
+  }
+  
+  .about-details-container {
+    display: flex;
+    flex-direction: column; /* Makes the boxes stack vertically */
+    justify-content: space-between; /* Distributes the space between the boxes */
+    gap: 2rem;
+    margin-left: 2rem; /* Move the boxes slightly to the right */
+  }
+  
+  .about-containers {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .details-container {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 1rem;
+    border: rgb(163, 163, 163) 0.1rem solid;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+  
+  .text-container {
+    margin-top: 2rem; /* Adds margin between the boxes and the paragraph */
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 768px) {
+    #about {
+      margin-top: 0; /* Reset margin for small screens */
+    }
+  
+    .section-container {
+      flex-direction: column; /* Stack the image and boxes on top of each other */
+      align-items: center; /* Center the items */
+      gap: 2rem; /* Reduce gap on small screens */
+      margin-left: 0; /* Reset margin for smaller screens */
+    }
+  
+    .about-pic {
+      width: 250px; /* Adjust image size on smaller screens */
+      margin-left: 0; /* Reset margin for smaller screens */
+    }
+  
+    .about-details-container {
+      gap: 1.5rem;
+      margin-left: 0; /* Reset margin for smaller screens */
+    }
+  
+    .details-container {
+      padding: 1rem; /* Adjust padding for smaller screens */
+    }
+  
+    .arrow {
+      right: -3rem; /* Adjust the position of the arrow on smaller screens */
+    }
+  }
+  
