@@ -1,5 +1,5 @@
 import React from "react";
-import "../about.css"; // Assuming your CSS styles are stored here
+import "../styles/about.css"; // Assuming your CSS styles are stored here
 
 function About() {
   return (

@@ -1,12 +1,11 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
 import Navbar from './components/Navbar'; // Add Navbar
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Project';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
 
 const App = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "../project.css"; // Assuming your CSS styles are stored here
+import "../styles/project.css"; // Assuming your CSS styles are stored here
 
 function Projects() {
   return (

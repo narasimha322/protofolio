@@ -1,5 +1,5 @@
 import React from "react";
-import "../contact.css"; // Assuming your CSS styles are stored here
+import "../styles/contact.css"; // Assuming your CSS styles are stored here
 
 function Contact() {
   return (
@@ -16,7 +16,7 @@ function Contact() {
             <img src="./linkedin.png" alt="LinkedIn icon" className="icon" />
             <p>
               <a
-                href="https://www.linkedin.com/in/your-profile"
+                href="https://www.linkedin.com/in/narasimha-reddy-983b54223/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-link"

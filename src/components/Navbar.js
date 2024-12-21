@@ -1,5 +1,5 @@
 import React from "react";
-import "../Navar.css"; // Assuming your CSS styles are stored here
+import "../styles/Navar.css"; // Assuming your CSS styles are stored here
 
 function Navbar() {
   return (
